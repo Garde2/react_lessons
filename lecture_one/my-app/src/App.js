@@ -1,4 +1,8 @@
 import "./App.css";
+import Greeting from "./components/Greeting.js";
+//import CurrentTime from "./components/CurrentTime";
+import EventCard from "./components/EventCard";
+import Greeting2 from "./components/Greeting2";
 
 function App(props) {
   const userName = "Garde";
@@ -9,6 +13,21 @@ function App(props) {
     >
       <div className="App">
         <h1>Hi, {userName}</h1>
+        <Greeting2 />
+        {/* <CurrentTime /> */}
+        <Greeting />
+        <EventCard
+          eventName="Встреча форумчан"
+          eventId="Важно!"
+          eventPlace="Moscow"
+          eventTime="16.06.2024"
+        ></EventCard>
+        <EventCard
+          eventName="Турпоход"
+          eventId="Еще важнее!"
+          eventPlace="Алтай"
+          eventTime="18.06.2024"
+        ></EventCard>{" "}
         <Article number="1" name="Info" />
         <Message userName="Вася" userSubject="React" />
         <Article number="2" name="Blog" />
