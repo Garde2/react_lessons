@@ -10,9 +10,33 @@ function App(props) {
       <div className="App">
         <h1>Hi, {userName}</h1>
         <Article number="1" name="Info" />
+        <Message userName="Вася" userSubject="React" />
         <Article number="2" name="Blog" />
+        <Message2 userName="Олег" userSubject="JS" />{" "}
       </div>
     </header>
+  );
+}
+
+function Message2(props) {
+  return (
+    <div>
+      <h3>
+        {" "}
+        Пишет {props.userName} о {props.userSubject}
+      </h3>
+    </div>
+  );
+}
+
+function Message({ userName, userSubject }) {
+  return (
+    <div>
+      <h3>
+        {" "}
+        Пишет {userName} о {userSubject}
+      </h3>
+    </div>
   );
 }
 
