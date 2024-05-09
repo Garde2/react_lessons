@@ -4,7 +4,7 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   const updateCount = () => {
-    setCount(count + 2);
+    setCount(count + 1);
   };
   return (
     <div>
@@ -14,5 +14,20 @@ function Counter() {
     </div>
   );
 }
+
+// const Counter = () => {
+//   const [count, setCount] = useState(0);
+
+//   const incrementCount = () => {
+//     setCount(count + 1);
+//   };
+
+//   return (
+//     <div>
+//       <p>{count}</p>
+//       <button onClick={incrementCount}>Click +1</button>
+//     </div>
+//   );
+// };
 
 export default Counter;
