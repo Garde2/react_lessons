@@ -5,6 +5,14 @@ import Nav from "./components/Menu";
 import HoverRating from "./components/Rating";
 import List from "./components/List";
 import Student from "./components/PropType";
+import GreetingName from "./components/GreetingName";
+import CounterPlusMinus from "./components/CounterPlusMinus";
+//import MessageList from "./components/MessageListId";
+import TextDisplayForm from "./components/TextDisplayForm";
+import TemperatureConverter from "./components/TemperatureConverter";
+import TodoList from "./components/ToolList";
+import ToDoList from "./components/ToDoList";
+
 // import Counter from "./components/Counter";
 // import Show from "./components/Visible";
 // import Timerref from "./components/Timerref";
@@ -18,8 +26,24 @@ import Student from "./components/PropType";
 
 function App() {
   // const userName = "Garde";
+  //рассматриваем задачу с формой на 1:20:00 примерно
+  const messages = [
+    { id: 1, text: "Привет!" },
+    { id: 2, text: "HПочему никого не семинаре?" },
+    { id: 3, text: "С работы прихожу после 22:00 по Мск=(!" },
+  ];
+
   return (
     <div>
+      <TemperatureConverter />
+      <TodoList />
+      <ToDoList />
+      <TextDisplayForm />
+
+      {/* <MessageList messages={messages} /> */}
+      <CounterPlusMinus />
+      <GreetingName name="Anna" />
+      <GreetingName name="Daria" />
       <HoverRating />
       <Nav />
       <ParrentCounter />
